@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "collection",
+            "database": "${workspaceFolder:marvel}/prisma/collection.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

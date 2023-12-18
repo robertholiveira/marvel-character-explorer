@@ -1,40 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marvel Characters Explorer
 
-## Getting Started
+Welcome to the Marvel Characters Explorer! This front-end application, built with Next.js, allows you to explore Marvel characters and their related connections within the comic universe.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project aims to provide an interactive platform to discover Marvel characters and their relationships in the vast Marvel universe.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Character Details**: View detailed information about Marvel characters, including their name, image, description, and related characters.
+- **Related Characters**: Explore connections and relationships among Marvel characters based on comic appearances.
+- **Spectrum's Page**: The initial landing page showcases details about the character Spectrum and her connections to other characters.
+- **Dynamic Character Pages**: Accessing any character triggers a request to find related characters based on their comic appearances.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## How It Works
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: Framework used for building React applications with server-side rendering and routing.
+- **Marvel API**: Utilized to fetch character data and comic-related information.
+- **Prisma**: ORM used to interact with the database to store character information.
 
-## Learn More
+### Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+To run this project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Set up environment variables required for the Marvel API.
+4. Run the application using `npm run dev`.
+5. Add the PRIVATE_KEY and PUBLIC_KEY values to the .env file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Alternativaly you can just add the RIVATE_KEY and PUBLIC_KEY to the .env file and run the Dockerfile.
 
-## Deploy on Vercel
+### Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Access the Spectrum's page at the root URL to see her details and related characters.
+- Click on any character to view their details and explore their connections within the Marvel universe.
+- The application dynamically fetches related characters based on the comics the selected character appears in.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

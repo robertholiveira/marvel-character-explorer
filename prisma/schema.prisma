@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Define the Characters table
+model Character {
+  id                   Int     @id
+  name                 String
+  description          String?
+  image                String?
+  isRelationsPopulated Boolean @default(false)
+
+  // Define the many-to-many relationship
+  relatedTo Character[] @relation("CharacterRelationship")
+  relatedBy Character[] @relation("CharacterRelationship")
+}

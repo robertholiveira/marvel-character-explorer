@@ -1,0 +1,30 @@
+.gameItem {
+    display: flex;
+    flex: 0 0 32%;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    background: rgba(255, 251, 251, 0.15);
+
+    .imageWrapper {
+        max-height: 300px;
+
+        img {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+    }
+
+
+    h2 {
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-size: 12px;
+    }
+}

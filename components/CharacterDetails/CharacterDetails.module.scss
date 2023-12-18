@@ -1,0 +1,14 @@
+.characterDetails {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+
+    .imgWrapper {
+        max-width: 30%;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+}
